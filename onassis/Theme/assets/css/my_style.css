@@ -2,6 +2,15 @@
     color: white;
 }
 
-myicon {
+.myicon {
     color: white;
+    letter-spacing: 12;
+	font-size: 25px;
+	font-weight: 1000;
+}
+
+.well-font {
+    font-size: 14px;
+	border-radius: 15px;
+	padding: 5px;
 }

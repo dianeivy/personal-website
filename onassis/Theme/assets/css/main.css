@@ -116,13 +116,19 @@ a:after {
 
 #headerwrap h4 {
 	color: black;
-	font-weight: 400;
+	font-weight: 500;
 	text-align: justify;
+	line-height: 25px;
+	background: rgba(255, 255, 255, .35);
+	border-radius: 15px;
+	padding: 5px;
 }
 
+/*
 #headerwrap a {
     color: green;
 }
+*/
 /* Portfolio Wrap */
 #portfoliowrap {
 	background: url(../img/portfolio-bg.jpg) no-repeat center top;
@@ -170,10 +176,17 @@ a:after {
 	letter-spacing: 1px;
 }
 
+#w h4 {
+	color: #66CCFF;
+}
+
 #w bold {
 	color: #2f2f2f;
 }
 
+#w p {
+	vertical-align: middle;
+}
 
 /* Grey Wrap */
 
@@ -194,8 +207,8 @@ a:after {
 	background: #e0e0e0;
 	padding-top: 35px;
 	padding-bottom: 35px;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 	text-align: center;
 }
 
@@ -291,93 +304,8 @@ a:after {
 
 
 
-/* NEW MENU CONF*/
-#sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
-    right: 0;
-    width: 250px;
-    height: 100%;
-    margin-right: -250px;
-    overflow-y: auto;
-    background: #222;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
+/* MENU CONF*/
 
-.sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
-}
-
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #999;
-}
-
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-    height: 55px;
-    font-size: 18px;
-    line-height: 55px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-    color: #999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
-}
-
-#menu-toggle {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-
-#sidebar-wrapper.active {
-    right: 250px;
-    width: 250px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.toggle {
-    margin: 5px 5px 0 0;
-}
-
-
-
-/* OLD MENU CONF*/
 .menu {
 	position: fixed;
 	right: -200px;
@@ -426,13 +354,13 @@ a:after {
 	margin-left: 20px;
 	color: #808080;
 	display: block;
-	font-size: 12px;
+	font-size: 15px;
 	font-weight: 700;
 	line-height: 40px;
 	letter-spacing: 0.1em;
-	text-transform: uppercase;
-}
 
+}
+/* text-transform: uppercase; */
 .menu a:hover {
 	color: #ffffff;
 }
@@ -452,7 +380,7 @@ a:after {
 	margin: 25px 2px;
 }
 
-.menu-close {
+.menu-close-old {
 	cursor: pointer;
 	display: block;
 	position: absolute;
@@ -470,6 +398,14 @@ a:after {
 			transition: all .1s ease-in-out;
 }
 
+.menu-close {
+	-webkit-transition: all .1s ease-in-out;
+	   -moz-transition: all .1s ease-in-out;
+		-ms-transition: all .1s ease-in-out;
+		 -o-transition: all .1s ease-in-out;
+			transition: all .1s ease-in-out;
+}
+
 .menu-close:hover {
 	color: #ffffff;
 	-webkit-transition: all .1s ease-in-out;
@@ -478,6 +414,7 @@ a:after {
 		 -o-transition: all .1s ease-in-out;
 			transition: all .1s ease-in-out;
 }
+
 
 /* Push the body after clicking the menu button */
 .body-push {
@@ -555,6 +492,16 @@ a:after {
 	
 }
 
+.icon-gs {
+	background: url(../img/scholar.png) no-repeat center top;
+	   width:100px;
+    display:block;
+    height:20px;
+    background:black;
+    color:white;
+    text-decoration:none;
+    padding-left:20px;
+}
 /* TEAM CONF */
 
 .team {
@@ -568,32 +515,4 @@ a:after {
 .team a {
 	padding-right: 10px;
 	padding-left: 10px;
-}
-
-/* Custom Button Styles */
-
-.btn-dark {
-    border-radius: 0;
-    color: #fff;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active {
-    color: #fff;
-    background-color: rgba(0,0,0,0.7);
-}
-
-.btn-light {
-    border-radius: 0;
-    color: #333;
-    background-color: rgb(255,255,255);
-}
-
-.btn-light:hover,
-.btn-light:focus,
-.btn-light:active {
-    color: #333;
-    background-color: rgba(255,255,255,0.8);
 }
